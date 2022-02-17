@@ -28,7 +28,7 @@ export default function Dicas() {
           <Text style={styles.content}>
             Uma grande dica para tornar seu churrasco ainda melhor é utilizar
             outros temperos nas carnes e não somente o sal grosso. Para carnes
-            bovinas, é interessante usar o Dry Black Rub, que é um sal com
+            bovinas, é interessante usar o Dry Rub Black, que é um sal com
             diversas especiarias para dar um gosto diferente à carne. Já para
             carne de porco e frango é bom usar o Dry Rub, que é um tempero de
             especiarias com um gosto muito marcante.
