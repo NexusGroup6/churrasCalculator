@@ -18,6 +18,10 @@ export default function Dicas() {
             e para que não se gaste mais ou menos do que o necessário. Deste
             modo, seu churrasco será melhor planejado e mais eficiente.
           </Text>
+          <Image
+            style={styles.img}
+            source={require("../imgs/others_meat.jpg")}
+          />
         </View>
 
         {/* Dica 2 */}
