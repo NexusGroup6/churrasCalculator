@@ -3,7 +3,7 @@ import { StyleSheet, Text, SafeAreaView, View, TextInput } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Checkbox } from "react-native-paper";
 import { ScrollView } from "react-native-gesture-handler";
-
+//import Calculadora from "../script";
 
 const Calculadora = () => {
   // TEXT INPUT NUMBER
@@ -257,16 +257,15 @@ const Calculadora = () => {
             color={"red"}
             uncheckColor={"red"}
           />
-        </SafeAreaView>
-
-        <View>
+        <SafeAreaView>
           <TouchableOpacity
             style={styles.botao}
             onPress={() => navigation.navigate("/")}
           >
-            <Text style={styles.botao}>CALCULAR</Text>
+            <Text style={styles.titleBotao}>CALCULAR</Text>
           </TouchableOpacity>
-        </View>
+        </SafeAreaView>
+        </SafeAreaView>
       </ScrollView>
     </>
   );
@@ -309,19 +308,18 @@ const styles = StyleSheet.create({
     padding: 3,
     marginLeft: 5,
   },
-
-  botao: {
-    fontWeight: "bold",
-    backgroundColor: "red",
-    fontSize: 26,
-    textAlign: "center",
-    paddingTop: 5,
-    paddingBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    color: "white",
-    borderRadius: 50,
-  },
+  botao:{
+   backgroundColor:'red',
+   color:'white',
+   borderRadius:100,
+   margin: 20,
+},
+titleBotao: {
+   fontSize: 25,
+   textAlign: "center",
+   color: '#fff',
+   padding: 13,
+ },
 });
 export default Calculadora;
 
