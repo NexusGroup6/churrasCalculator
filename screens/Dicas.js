@@ -80,8 +80,48 @@ export default function Dicas() {
             dela
           </Text>
           <Image
-            style={styles.imgBottom}
+            style={styles.img}
             source={require("../imgs/corteCarne.jpg")}
+          />
+        </View>
+
+        {/* Dica 5 */}
+        <View>
+          <Text style={styles.subtitle}>5. Faça também legumes na grelha</Text>
+          <Text style={styles.content}>
+            Mesmo não sendo algo muito típico no churrasco brasileiro, países
+            como Alemanha, Itália e outros da Europa já adaptaram seus
+            churrascos para veganos também poderem comer. Nesses países, os
+            legumes fazem parte do churrasco, acrescentando e muito na
+            diversidade do churrasco. Normalmente, os legumes normalmente feitos
+            na churrasqueira são os cogumelos, pimentões, abobrinha e milho.
+            Basta passar um leve tempero neles e aproveitar depois de prontos.
+          </Text>
+          <Image
+            style={styles.img}
+            source={require("../imgs/legumesGrelha.jpg")}
+          />
+        </View>
+
+        {/* Dica 6 */}
+        <View>
+          <Text style={styles.subtitle}>
+            6. Diabéticos podem comer churrasco?
+          </Text>
+          <Text style={styles.content}>
+            Uma grande dica para diabéticos é que as carnes em geral são amigas
+            da diabetes, pois além de trazer proteínas e gorduras saudáveis para
+            o corpo, traz grande saciedade, fazendo assim com que os diabéticos
+            não tenham que comer várias vezes no dia, ocasionando assim, na não
+            medição de insulina várias vezes. Ou seja, as carnes do churrasco
+            estão em geral liberadas, pois trazem saciedade maior, fazendo com
+            que tenha que medir e usar insulina menos vezes no dia. Deste modo,
+            acredita-se que carnes que trazem maior saciedade sejam as mais
+            recomendadas.
+          </Text>
+          <Image
+            style={styles.imgBottom}
+            source={require("../imgs/diabete.jpg")}
           />
         </View>
       </View>
@@ -106,15 +146,15 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   content: {
-   color: "black",
-   textAlign: "justify",
-   fontSize: 19,
-   paddingLeft: 20,
-   paddingRight: 20,
-   marginBottom: 15,
+    color: "black",
+    textAlign: "justify",
+    fontSize: 19,
+    paddingLeft: 20,
+    paddingRight: 20,
+    marginBottom: 15,
   },
   img: {
-    marginBottom: 25,
+    marginBottom: 30,
     alignSelf: "center",
     width: "100%",
   },

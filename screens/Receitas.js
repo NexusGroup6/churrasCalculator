@@ -127,11 +127,11 @@ export default function Receitas() {
           </Text>
           <Text style={styles.content}>
             9. Agora recorte a mesma quantidade de papéis que colocou embaixo e
-            coloque sobre a costela
+            coloque sobre a costela.
           </Text>
           <Text style={styles.content}>
             10. Vá dobrando e unindo os papéis de baixo com os de cima, fazendo
-            uma forte união entre as bordas deles
+            uma forte união entre as bordas deles.
           </Text>
           <Text style={styles.content}>
             11. Leve a costela e coloque sobre a grelha.
@@ -177,26 +177,112 @@ export default function Receitas() {
           <Text style={styles.content}>
             5. Retire o papel alumínio da panceta, retire o excesso de sal e
             volte a churrasqueira (primeiro andar da churrasqueira) com o lado
-            da carne voltado para o braseiro para dourar a parte da carne
+            da carne voltado para o braseiro para dourar a parte da carne.
           </Text>
           <Text style={styles.content}>
             6. Quando a parte da carne estiver dourada, suba a panceta na altura
             de 40 centímetros, com o lado da pele voltado para o braseiro, para
-            pururucar a pele
+            pururucar a pele.
           </Text>
           <Text style={styles.content}>
             7. Assim que a pele estiver pururuca, retire da churrasqueira, deixe
             a panceta descansar por 5 minutos antes de servir. Para servir,
-            corte em iscas e sirva com limão
+            corte em iscas e sirva com limão.
           </Text>
           <Text style={styles.content}>
             8. Prato pronto é só servir e bom apetite! O tempo de preparo
             depende do braseiro utilizado. Vale lembrar que o fogo é muito alto,
-            vai dourar por fora e não vai assar por dentro
+            vai dourar por fora e não vai assar por dentro.
+          </Text>
+          <Image style={styles.img} source={require("../imgs/panceta.jpg")} />
+        </View>
+
+        {/* Receita 5 */}
+        <View>
+          <Text style={styles.subtitle}>
+            5. Espetinho de Legumes - p/Vegetarianos
+          </Text>
+          <Text style={styles.subtitle}>Ingredientes</Text>
+          <Text style={styles.content}>- 1 batata-doce em cubos médios</Text>
+          <Text style={styles.content}>- 1 xícara (chá) de cebola petisco</Text>
+          <Text style={styles.content}>- 1 berinjela em cubos grandes</Text>
+          <Text style={styles.content}>- 1 xícara (chá) de tomate cereja</Text>
+          <Text style={styles.content}>
+            - 1 xícara (chá) de tofu em cubos grande
+          </Text>
+          <Text style={styles.subtitle}>Ingredientes do Tempero</Text>
+          <Text style={styles.content}>- 1 xícara (chá) de azeite</Text>
+          <Text style={styles.content}>- 1/4 xícara (chá) de mostarda</Text>
+          <Text style={styles.content}>- 1/4 xícara (chá) de balsâmico</Text>
+          <Text style={styles.content}>
+            - 1/4 xícara (chá) de suco de limão
+          </Text>
+          <Text style={styles.content}>- Pimenta (a gosto)</Text>
+          <Text style={styles.subtitle}>Modo de Preparo</Text>
+          <Text style={styles.content}>
+            1. Bata os ingredientes da marinada no liquidificador.
+          </Text>
+          <Text style={styles.content}>
+            2. Marine todos os legumes e o tofu por 8 horas.
+          </Text>
+          <Text style={styles.content}>
+            3. Asse a batata e a cebola marinadas.
+          </Text>
+          <Text style={styles.content}>
+            4. Grelhe o tofu, a berinjela e a abobrinha.
+          </Text>
+          <Text style={styles.content}>5. Forme espetinhos.</Text>
+          <Text style={styles.content}>6. Grelhe-os no espetinho.</Text>
+          <Image
+            style={styles.img}
+            source={require("../imgs/espetinho_de_legumes.jpg")}
+          />
+        </View>
+
+        {/* Receita 6 */}
+        <View>
+          <Text style={styles.subtitle}>
+            6. Lombinho de porco recheado com cogumelo - p/Diabéticos
+          </Text>
+          <Text style={styles.subtitle}>Ingredientes</Text>
+          <Text style={styles.content}>- 1kg de lombo de porco</Text>
+          <Text style={styles.content}>- 200g de cogumelos frescos</Text>
+          <Text style={styles.content}>- 2 colheres (sopa) de azeite</Text>
+          <Text style={styles.content}>- 3 colheres (sopa) de manteiga</Text>
+          <Text style={styles.content}>- 1 cebola grande picada</Text>
+          <Text style={styles.content}>- 2 dentes de alhos picados</Text>
+          <Text style={styles.content}>- 1 raminho de salsa picada</Text>
+          <Text style={styles.content}>- 2 tomates maduros picados</Text>
+          <Text style={styles.content}>- 200ml de vinho branco</Text>
+          <Text style={styles.content}>- Sal e pimenta (a gosto)</Text>
+          <Text style={styles.subtitle}>Modo de Preparo</Text>
+          <Text style={styles.content}>
+            1. Lavar, secar e fatiar os cogumelos. Cozinhe-os em azeite com uma
+            colher (sopa) da cebola dourada. Fazer uma cavidade no lombo e
+            acrescentar sal e pimenta e rechear com os cogumelos.
+          </Text>
+          <Text style={styles.content}>
+            2. Amarrar com barbante e temperar novamente com sal e pimenta. Em
+            uma panela, dourar a carne com a manteiga aquecida. Colocar a carne
+            em uma assadeira e reservar a gordura que sobrou.
+          </Text>
+          <Text style={styles.content}>
+            3. Em uma panela, refogar o alho com o restante da cebola na gordura
+            da carne. Acrescentar a salsa e o tomate picado, incluindo o vinho
+            branco.
+          </Text>
+          <Text style={styles.content}>
+            4. Deixar levantar fervura e regar o lombo de porco com o molho
+            obtido. Leve ao forno, durante 50 a cinco minutos, a 180 °C, regando
+            com um pouco de água. Por fim, retirar o barbante e servir inteiro,
+            ou fatiado, com o que sobrou do molho, à parte.
+          </Text>
+          <Text style={styles.content}>
+            5. Por final, grelhe rapidamente na churrasqueira.
           </Text>
           <Image
             style={styles.imgBottom}
-            source={require("../imgs/panceta.jpg")}
+            source={require("../imgs/lombinho_de_porco.jpg")}
           />
         </View>
       </View>

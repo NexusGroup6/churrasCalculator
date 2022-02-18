@@ -64,7 +64,7 @@ const Calculadora = () => {
         </SafeAreaView>
 
         <SafeAreaView>
-          <Text style={styles.subtitle}>3. Cortes</Text>
+          <Text style={styles.subtitle}>3. CORTES</Text>
 
           <Text style={styles.placeholder}> PICANHA SUÍNA</Text>
           <Checkbox //PICANHA SUINA
@@ -128,7 +128,7 @@ const Calculadora = () => {
         </SafeAreaView>
 
         <SafeAreaView>
-          <Text style={styles.subtitle}>4. Acompanhamentos</Text>
+          <Text style={styles.subtitle}>4. ACOMPANHAMENTOS</Text>
 
           <Text style={styles.placeholder}>PÃO DE ALHO</Text>
           <Checkbox // PÃO DE ALHO
@@ -172,7 +172,7 @@ const Calculadora = () => {
         </SafeAreaView>
 
         <SafeAreaView>
-          <Text style={styles.subtitle}>5. Bebidas</Text>
+          <Text style={styles.subtitle}>5. BEBIDAS</Text>
 
           <Text style={styles.placeholder}> REFRIGERANTE</Text>
           <Checkbox //  REFRIGERANTE
@@ -216,7 +216,7 @@ const Calculadora = () => {
         </SafeAreaView>
 
         <SafeAreaView>
-          <Text style={styles.subtitle}>6. Suprimentos</Text>
+          <Text style={styles.subtitle}>6. SUPRIMENTOS</Text>
 
           <Text style={styles.placeholder}>CARVÃO</Text>
           <Checkbox //  CARVÃO
@@ -322,15 +322,3 @@ titleBotao: {
  },
 });
 export default Calculadora;
-
-/*import * as React from 'react';
-import { Text, View } from 'react-native';
-
-
-export default function Calculadora() {
-   return (
-<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-<Text style={{fontSize:16,fontWeight:'700'}}>Calculadora</Text>
-</View>
-   );
- }*/
