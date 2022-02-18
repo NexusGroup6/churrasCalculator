@@ -1,9 +1,15 @@
 import * as React from "react";
-import { StyleSheet, Text, SafeAreaView } from "react-native";
+import { StyleSheet, Text, SafeAreaView, View, TextInput } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import { Checkbox } from "react-native-paper";
 import { ScrollView } from "react-native-gesture-handler";
 
+
 const Calculadora = () => {
+  // TEXT INPUT NUMBER
+  const [number, onChangeNumber] = React.useState(null);
+  const [number2, onChangeNumber2] = React.useState(null);
+
   // CORTES
   const [checked, setChecked] = React.useState(false);
   const [checked1, setChecked1] = React.useState(false);
@@ -33,13 +39,32 @@ const Calculadora = () => {
   return (
     <>
       <ScrollView>
-        <SafeAreaView>  
+        <SafeAreaView>
           <Text style={styles.title}>Calculadora</Text>
         </SafeAreaView>
 
+        <SafeAreaView>
+          <Text style={styles.subtitle}>1. QUANTOS ADULTOS? </Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={onChangeNumber}
+            value={number}
+            placeholder="Informe a quantidade de Adultos!"
+            keyboardType="numeric"
+          />
 
-        <SafeAreaView>  
-          <Text style={styles.subtitle}>1. Cortes</Text>
+          <Text style={styles.subtitle}>2. QUANTAS CRIANÇAS? </Text>
+          <TextInput
+            style={styles.input}
+            onChangeText2={onChangeNumber2}
+            value={number2}
+            placeholder="Informe a quantidade de Crianças!"
+            keyboardType="numeric"
+          />
+        </SafeAreaView>
+
+        <SafeAreaView>
+          <Text style={styles.subtitle}>3. Cortes</Text>
 
           <Text style={styles.placeholder}> PICANHA SUÍNA</Text>
           <Checkbox //PICANHA SUINA
@@ -102,9 +127,8 @@ const Calculadora = () => {
           />
         </SafeAreaView>
 
-
-        <SafeAreaView>  
-          <Text style={styles.subtitle}>2. Acompanhamentos</Text>
+        <SafeAreaView>
+          <Text style={styles.subtitle}>4. Acompanhamentos</Text>
 
           <Text style={styles.placeholder}>PÃO DE ALHO</Text>
           <Checkbox // PÃO DE ALHO
@@ -147,9 +171,8 @@ const Calculadora = () => {
           />
         </SafeAreaView>
 
-
-        <SafeAreaView>  
-          <Text style={styles.subtitle}>3. Bebidas</Text>
+        <SafeAreaView>
+          <Text style={styles.subtitle}>5. Bebidas</Text>
 
           <Text style={styles.placeholder}> REFRIGERANTE</Text>
           <Checkbox //  REFRIGERANTE
@@ -192,9 +215,8 @@ const Calculadora = () => {
           />
         </SafeAreaView>
 
-
-        <SafeAreaView>  
-          <Text style={styles.subtitle}>4. Suprimentos</Text>
+        <SafeAreaView>
+          <Text style={styles.subtitle}>6. Suprimentos</Text>
 
           <Text style={styles.placeholder}>CARVÃO</Text>
           <Checkbox //  CARVÃO
@@ -236,6 +258,15 @@ const Calculadora = () => {
             uncheckColor={"red"}
           />
         </SafeAreaView>
+
+        <View>
+          <TouchableOpacity
+            style={styles.botao}
+            onPress={() => navigation.navigate("/")}
+          >
+            <Text style={styles.botao}>CALCULAR</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </>
   );
@@ -248,6 +279,7 @@ const styles = StyleSheet.create({
     padding: 20,
     textAlign: "right",
   },
+
   subtitle: {
     color: "black",
     textAlign: "justify",
@@ -257,6 +289,19 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     marginBottom: 15,
   },
+
+  input: {
+    height: 40,
+    margin: 10,
+    borderWidth: 1,
+    padding: 10,
+    color: "black",
+    borderRadius: 15,
+    borderColor: "black",
+    marginLeft: 20,
+    marginRight: 20,
+  },
+
   placeholder: {
     fontSize: 12,
     fontWeight: "700",
@@ -264,10 +309,21 @@ const styles = StyleSheet.create({
     padding: 3,
     marginLeft: 5,
   },
+
+  botao: {
+    fontWeight: "bold",
+    backgroundColor: "red",
+    fontSize: 26,
+    textAlign: "center",
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    color: "white",
+    borderRadius: 50,
+  },
 });
 export default Calculadora;
-
-
 
 /*import * as React from 'react';
 import { Text, View } from 'react-native';
