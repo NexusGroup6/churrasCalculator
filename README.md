@@ -1,4 +1,4 @@
-<h1 align="center">Site_tutorial_AwS</h1>
+<h1 align="center">Churrascometro</h1>
  <h4 align="center"> 
 	🚧  App Mobile  🚀 Incompleto ❗
 </h4>
@@ -24,7 +24,7 @@ Tabela de conteúdos
 Antes de começar, você irá precisar ter instalado em sua máquina a seguinte ferramenta:
 [Git](https://git-scm.com). 
 Além disto é recomendável utilizar um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-Ter instalado o Nodejs [NodeJS](https://nodejs.org/en/)
+Ter instalado o [NodeJS](https://nodejs.org/en/)
 Instalar o expo em sua maquina [Expo](https://docs.expo.dev/get-started/installation/)
 
 ### 🛠 Tecnologias
