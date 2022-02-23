@@ -2,8 +2,8 @@
  <h4 align="center"> 
 	🚧  App Mobile  🚀 Incompleto ❗
 </h4>
-<p align="center">Projeto feito para servir como uma calculadora de churrasco mobile!</p>
-<p align="center"> Projeto organizado no trello usando o metodo kanban pelo grupo Nexus </p>
+<p align="center">Projeto feito para auxiliar no planejamento de preços gastos em um churrasco. App para celular.</p>
+<p align="center"> Projeto organizado no trello usando o método kanban pelo grupo Nexus, na rede Senai. </p>
 
 Tabela de conteúdos
 =================
@@ -25,13 +25,14 @@ Antes de começar, você irá precisar ter instalado em sua máquina a seguinte 
 [Git](https://git-scm.com). 
 Além disto é recomendável utilizar um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 Ter instalado o [NodeJS](https://nodejs.org/en/)
-Instalar o  [Expo](https://docs.expo.dev/get-started/installation/) em sua maquina 
+Instalar o  [Expo](https://docs.expo.dev/get-started/installation/) em sua máquina 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - JavaScript
 - React-Native
+- Bibliotecas de icon's
 
 ## Site 
 
@@ -41,7 +42,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </h1>
 
 
-<p> Página Inicial / Menu </p>
+<p> Página Inicial / Home </p>
 <h1 align="center">
   <img alt="imagem" title="#imagem" src="imgMarkdown/Home.jpeg" />
 </h1>
@@ -75,5 +76,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Matheus Costa -> BackEnd
 - Matheus Reis -> BackEnd
 
-## 👨‍🏫 Docentes
-Atila Andreatti - Vinicius Viúde - James Ferreira 
+## 👨‍🏫 Docente
+Atila Andreatti
