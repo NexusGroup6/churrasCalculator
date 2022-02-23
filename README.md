@@ -13,6 +13,7 @@ Tabela de conteúdos
    * Tecnologias
    * Site
    * Contribuidores 
+   * Docente
 <!--te-->
 
 <h2>Features</h2>
@@ -41,7 +42,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <img alt="imagem" title="#imagem" src="imgMarkdown/menuLateral.jpeg" />
 </h1>
 
-
 <p> Página Inicial / Home </p>
 <h1 align="center">
   <img alt="imagem" title="#imagem" src="imgMarkdown/Home.jpeg" />
@@ -61,11 +61,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <h1 align="center">
   <img alt="imagem" title="#imagem" src="imgMarkdown/Calculadora.jpeg" />
 </h1>
-
-
-
-
-
 
 ## 👨‍💻 Contribuidores
 
