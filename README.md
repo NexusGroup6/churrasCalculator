@@ -68,9 +68,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 👨‍💻 Contribuidores
 
-Vitor Benedito - Paulo Rondon -
-Paulo Willyan - Marcos Arambasic -
-Matheus Costa - Matheus Reis
+- Vitor Benedito -> Front End 
+- Paulo Rondon -> Markdown, WireFrame inicial
+- Paulo Willyan -> BackEnd, FrontEnd,
+- Marcos Arambasic -> Pit, WireFrame Final e pequisas de campo,
+- Matheus Costa -> BackEnd
+- Matheus Reis -> BackEnd
 
 ## 👨‍🏫 Docentes
 Atila Andreatti - Vinicius Viúde - James Ferreira 
