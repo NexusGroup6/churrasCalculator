@@ -1,14 +1,23 @@
-import * as React from "react";
-import { StyleSheet, Text, SafeAreaView, View, TextInput } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, Text, SafeAreaView, TextInput } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Checkbox } from "react-native-paper";
 import { ScrollView } from "react-native-gesture-handler";
+import Calcular from "../script";
 //import Calculadora from "../script";
 
 const Calculadora = () => {
   // TEXT INPUT NUMBER
-  const [number, onChangeNumber] = React.useState(null);
-  const [number2, onChangeNumber2] = React.useState(null);
+  const [adultos, setAdultos] = useState("");
+  const [kids, setKids] = useState("");
+  const [resultado, setResultado] = useState("");
+  const [resultado2, setResultado2] = useState("");
+
+  const Calcular = () => {
+    setResultado(adultos * 600);
+    setResultado2(kids * 100);
+    
+  };
 
   // CORTES
   const [checked, setChecked] = React.useState(false);
@@ -47,8 +56,10 @@ const Calculadora = () => {
           <Text style={styles.subtitle}>1. QUANTOS ADULTOS? </Text>
           <TextInput
             style={styles.input}
-            onChangeText={onChangeNumber}
-            value={number}
+            onChangeText={(texto) => {
+              setAdultos(texto);
+            }}
+            value={String(adultos)}
             placeholder="Informe a quantidade de Adultos!"
             keyboardType="numeric"
           />
@@ -56,8 +67,10 @@ const Calculadora = () => {
           <Text style={styles.subtitle}>2. QUANTAS CRIANÇAS? </Text>
           <TextInput
             style={styles.input}
-            onChangeText2={onChangeNumber2}
-            value={number2}
+            onChangeText={(texto) => {
+              setKids(texto);
+            }}
+            value={String(kids)}
             placeholder="Informe a quantidade de Crianças!"
             keyboardType="numeric"
           />
@@ -257,14 +270,16 @@ const Calculadora = () => {
             color={"red"}
             uncheckColor={"red"}
           />
-        <SafeAreaView>
-          <TouchableOpacity
-            style={styles.botao}
-            onPress={() => navigation.navigate("/")}
-          >
-            <Text style={styles.titleBotao}>CALCULAR</Text>
-          </TouchableOpacity>
-        </SafeAreaView>
+          <SafeAreaView>
+            <TouchableOpacity style={styles.botao} onPress={() => Calcular()}>
+              <Text style={styles.titleBotao}>CALCULAR</Text>
+            </TouchableOpacity>
+          </SafeAreaView>
+
+          <SafeAreaView>
+            <Text>{resultado}</Text>
+            <Text>{resultado2}</Text>
+          </SafeAreaView>
         </SafeAreaView>
       </ScrollView>
     </>
@@ -308,17 +323,17 @@ const styles = StyleSheet.create({
     padding: 3,
     marginLeft: 5,
   },
-  botao:{
-   backgroundColor:'red',
-   color:'white',
-   borderRadius:100,
-   margin: 20,
-},
-titleBotao: {
-   fontSize: 25,
-   textAlign: "center",
-   color: '#fff',
-   padding: 13,
- },
+  botao: {
+    backgroundColor: "red",
+    color: "white",
+    borderRadius: 100,
+    margin: 20,
+  },
+  titleBotao: {
+    fontSize: 25,
+    textAlign: "center",
+    color: "#fff",
+    padding: 13,
+  },
 });
 export default Calculadora;

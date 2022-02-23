@@ -1,5 +1,4 @@
-const Calculadora = () => {
-    
+export default function Calcular() {
+   
+  
 }
-
-export default Calculadora;
