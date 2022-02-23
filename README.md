@@ -24,15 +24,13 @@ Tabela de conteúdos
 Antes de começar, você irá precisar ter instalado em sua máquina a seguinte ferramenta:
 [Git](https://git-scm.com). 
 Além disto é recomendável utilizar um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-Ter instalado o Nodejs .[NodeJS].(https://nodejs.org/en/)
-Instalar o expo em sua maquina .[Expo].(https://docs.expo.dev/get-started/installation/)
+Ter instalado o Nodejs [NodeJS](https://nodejs.org/en/)
+Instalar o expo em sua maquina [Expo](https://docs.expo.dev/get-started/installation/)
 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- HTML
-- CSS
 - JavaScript
 - React-Native
 
