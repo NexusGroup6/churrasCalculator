@@ -25,8 +25,7 @@ Antes de começar, você irá precisar ter instalado em sua máquina a seguinte 
 [Git](https://git-scm.com). 
 Além disto é recomendável utilizar um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 Ter instalado o [NodeJS](https://nodejs.org/en/)
-Instalar o  [Expo](https://docs.expo.dev/get-started/installation/) em sua maquina [Expo](https://docs.expo.dev/get-started/installation/)
-
+Instalar o  [Expo](https://docs.expo.dev/get-started/installation/) em sua maquina 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
