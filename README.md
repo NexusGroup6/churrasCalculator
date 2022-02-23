@@ -35,30 +35,30 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Site 
 
-<p> Menu lateral usado no site </p>
+<p> Menu lateral usado no App </p>
 <h1 align="center">
-  <img alt="imagem" title="#imagem" src="print_site_md/menu_lateral.png" />
+  <img alt="imagem" title="#imagem" src="imgMarkdown/menuLateral.jpeg" />
 </h1>
 
 
-<p> Pagina Inicial/Criação AwS </p>
+<p> Página Inicial / Menu </p>
 <h1 align="center">
-  <img alt="imagem" title="#imagem" src="print_site_md/pagina_inicial.png" />
+  <img alt="imagem" title="#imagem" src="imgMarkdown/Home.jpeg" />
 </h1>
 
-<p> Instalação Putty</p>
+<p> Página De Receitas</p>
 <h1 align="center">
-  <img alt="imagem" title="#imagem" src="print_site_md/instalacao_putty.png" />
+  <img alt="imagem" title="#imagem" src="imgMarkdown/Receitas.jpeg" />
 </h1>
 
-<p> Acessando a Maquina AwS via Putty </p>
+<p> Páginas de Dicas </p>
 <h1 align="center">
-  <img alt="imagem" title="#imagem" src="print_site_md/acessar_via_putty.png" />
+  <img alt="imagem" title="#imagem" src="imgMarkdown/Dicas.jpeg" />
 </h1>
 
-<p> Instalando o WinSCP </p>
+<p> Página da Calculadora </p>
 <h1 align="center">
-  <img alt="imagem" title="#imagem" src="print_site_md/winSCP.png" />
+  <img alt="imagem" title="#imagem" src="imgMarkdown/Calculadora.jpeg" />
 </h1>
 
 
