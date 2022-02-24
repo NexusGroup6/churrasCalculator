@@ -7,6 +7,16 @@ import Calcular from "../script";
 //import Calculadora from "../script";
 
 const Calculadora = () => {
+
+  const check = () => {
+    if (checked != true){
+      alert("checkbox está verdadeiro")
+        }
+        else{
+          alert("nothing")
+        }
+  }
+
   // TEXT INPUT NUMBER
   const [adultos, setAdultos] = useState("");
   const [kids, setKids] = useState("");
@@ -84,6 +94,7 @@ const Calculadora = () => {
             status={checked ? "checked" : "unchecked"}
             onPress={() => {
               setChecked(!checked);
+              check();
             }}
             color={"red"}
             uncheckColor={"red"}
