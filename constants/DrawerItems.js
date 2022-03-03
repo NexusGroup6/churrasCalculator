@@ -20,7 +20,7 @@ export default [
         iconName:'lightbulb-o'
     },
     {
-        name:'Créditos',
+        name:'Colaboradores',
         iconType:'Ionicons',
         iconName:'information-circle-outline'
     }

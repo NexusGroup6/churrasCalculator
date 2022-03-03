@@ -5,13 +5,13 @@ import Home from "./screens/Home";
 import Calculadora from "./screens/calculadora";
 import { SimpleLineIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
+//import { FontAwesome5 } from "@expo/vector-icons";
 import Receitas from "./screens/Receitas";
 import Dicas from "./screens/Dicas";
 import DrawerItems from "./constants/DrawerItems";
 import { FontAwesome } from '@expo/vector-icons'; 
 import Creditos from './screens/Credits';
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 
 
 //import { MaterialCommunityIcons } from "@expo/vector-icons";
