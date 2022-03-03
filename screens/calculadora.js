@@ -8,7 +8,7 @@ import Calcular from "../script";
 
 const Calculadora = () => {
   const check = () => {
-    if (checked != true) {
+    if (checkPicanha != true) {
       alert("checkbox está verdadeiro");
     } else {
       alert("nothing");
@@ -32,30 +32,30 @@ const Calculadora = () => {
   };
 
   // CORTES
-  const [checked, setChecked] = React.useState(false);
-  const [checked1, setChecked1] = React.useState(false);
-  const [checked2, setChecked2] = React.useState(false);
-  const [checked3, setChecked3] = React.useState(false);
-  const [checked4, setChecked4] = React.useState(false);
-  const [checked5, setChecked5] = React.useState(false);
+  const [checkPicanha, setPicanha] = React.useState(false);
+  const [checkCostela, setCostela] = React.useState(false);
+  const [checkBovina, setBovina] = React.useState(false);
+  const [checkLinguica, setLinguica] = React.useState(false);
+  const [checkAsa, setAsa] = React.useState(false);
+  const [checkCoxa, setCoxa] = React.useState(false);
 
   //ACOMPANHAMENTOS
-  const [checked6, setChecked6] = React.useState(false);
-  const [checked7, setChecked7] = React.useState(false);
-  const [checked8, setChecked8] = React.useState(false);
-  const [checked9, setChecked9] = React.useState(false);
+  const [checkAlho, setAlho] = React.useState(false);
+  const [checkFarofa, setFarofa] = React.useState(false);
+  const [checkQueijo, setQueijo] = React.useState(false);
+  const [checkVinagrete, setVinagrete] = React.useState(false);
 
   //BEBIDAS
-  const [checked10, setChecked10] = React.useState(false);
-  const [checked11, setChecked11] = React.useState(false);
-  const [checked12, setChecked12] = React.useState(false);
-  const [checked13, setChecked13] = React.useState(false);
+  const [checkRefrigerante, setRefrigerante] = React.useState(false);
+  const [checkSuco, setSuco] = React.useState(false);
+  const [checkCerveja, setCerveja] = React.useState(false);
+  const [checkAgua, setAgua] = React.useState(false);
 
   //SUPRIMENTOS
-  const [checked14, setChecked14] = React.useState(false);
-  const [checked15, setChecked15] = React.useState(false);
-  const [checked16, setChecked16] = React.useState(false);
-  const [checked17, setChecked17] = React.useState(false);
+  const [checkCarvao, setCarvao] = React.useState(false);
+  const [checkCopos, setCopos] = React.useState(false);
+  const [checkTalher, setTalher] = React.useState(false);
+  const [checkPrato, setPrato] = React.useState(false);
 
   return (
     <>
@@ -93,9 +93,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}> PICANHA SUÍNA</Text>
           <Checkbox //PICANHA SUINA
-            status={checked ? "checked" : "unchecked"}
+            status={checkPicanha ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked(!checked);
+              setPicanha(!checkPicanha);
               check();
             }}
             color={"red"}
@@ -104,9 +104,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>COSTELA SUÍNA</Text>
           <Checkbox // COSTELA SUINA
-            status={checked1 ? "checked" : "unchecked"}
+            status={checkCostela ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked1(!checked1);
+              setCostela(!checkCostela);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -114,9 +114,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>CARNE BOVINA</Text>
           <Checkbox // CARNE BOVINA
-            status={checked2 ? "checked" : "unchecked"}
+            status={checkBovina ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked2(!checked2);
+              setBovina(!checkBovina);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -124,9 +124,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>LINGUIÇA</Text>
           <Checkbox //  LINGUIÇA
-            status={checked3 ? "checked" : "unchecked"}
+            status={checkLinguica ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked3(!checked3);
+              setLinguica(!checkLinguica);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -134,9 +134,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>COXINHA DE ASA</Text>
           <Checkbox // COXINHA DE ASA
-            status={checked4 ? "checked" : "unchecked"}
+            status={checkAsa ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked4(!checked4);
+              setAsa(!checkAsa);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -144,9 +144,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>SOBRECOXA</Text>
           <Checkbox // SOBRECOXA
-            status={checked5 ? "checked" : "unchecked"}
+            status={checkCoxa ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked5(!checked5);
+              setCoxa(!checkCoxa);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -158,9 +158,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>PÃO DE ALHO</Text>
           <Checkbox // PÃO DE ALHO
-            status={checked6 ? "checked" : "unchecked"}
+            status={checkAlho ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked6(!checked6);
+              setAlho(!checkAlho);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -168,9 +168,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>FAROFA</Text>
           <Checkbox // FAROFA
-            status={checked7 ? "checked" : "unchecked"}
+            status={checkFarofa ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked7(!checked7);
+              setFarofa(!checkFarofa);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -178,9 +178,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>QUEIJO COALHO</Text>
           <Checkbox // QUEIJO COALHO
-            status={checked8 ? "checked" : "unchecked"}
+            status={checkQueijo ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked8(!checked8);
+              setQueijo(!checkQueijo);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -188,9 +188,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>VINAGRETE</Text>
           <Checkbox // VINAGRETE
-            status={checked9 ? "checked" : "unchecked"}
+            status={checkVinagrete ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked9(!checked9);
+              setVinagrete(!checkVinagrete);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -202,9 +202,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}> REFRIGERANTE</Text>
           <Checkbox //  REFRIGERANTE
-            status={checked10 ? "checked" : "unchecked"}
+            status={checkRefrigerante ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked10(!checked10);
+              setRefrigerante(!checkRefrigerante);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -212,9 +212,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>SUCO</Text>
           <Checkbox // SUCO
-            status={checked11 ? "checked" : "unchecked"}
+            status={checkSuco ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked11(!checked11);
+              setSuco(!checkSuco);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -222,9 +222,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>CERVEJA</Text>
           <Checkbox // CERVEJA
-            status={checked12 ? "checked" : "unchecked"}
+            status={checkCerveja ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked12(!checked12);
+              setCerveja(!checkCerveja);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -232,9 +232,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>ÁGUA</Text>
           <Checkbox // ÁGUA
-            status={checked13 ? "checked" : "unchecked"}
+            status={checkAgua ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked13(!checked13);
+              setAgua(!checkAgua);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -246,9 +246,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>CARVÃO</Text>
           <Checkbox //  CARVÃO
-            status={checked14 ? "checked" : "unchecked"}
+            status={checkCarvao ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked14(!checked14);
+              setCarvao(!checkCarvao);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -256,9 +256,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>COPOS</Text>
           <Checkbox // COPOS
-            status={checked15 ? "checked" : "unchecked"}
+            status={checkCopos ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked15(!checked15);
+              setCopos(!checkCopos);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -266,9 +266,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>TALHERES</Text>
           <Checkbox // TALHERES
-            status={checked16 ? "checked" : "unchecked"}
+            status={checkTalher ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked16(!checked16);
+              setTalher(!checkTalher);
             }}
             color={"red"}
             uncheckColor={"red"}
@@ -276,9 +276,9 @@ const Calculadora = () => {
 
           <Text style={styles.placeholder}>PRATOS</Text>
           <Checkbox //  PRATOS
-            status={checked17 ? "checked" : "unchecked"}
+            status={checkPrato ? "checked" : "unchecked"}
             onPress={() => {
-              setChecked17(!checked17);
+              setPrato(!checkPrato);
             }}
             color={"red"}
             uncheckColor={"red"}
