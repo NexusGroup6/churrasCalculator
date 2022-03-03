@@ -7,15 +7,18 @@ import Calcular from "../script";
 //import Calculadora from "../script";
 
 const Calculadora = () => {
-
   const check = () => {
-    if (checked != true){
-      alert("checkbox está verdadeiro")
-        }
-        else{
-          alert("nothing")
-        }
-  }
+    if (checked != true) {
+      alert("checkbox está verdadeiro");
+    } else {
+      alert("nothing");
+    }
+  };
+
+  const Limpar = () => {
+    setResultado("");
+    setResultado2("");
+  };
 
   // TEXT INPUT NUMBER
   const [adultos, setAdultos] = useState("");
@@ -26,7 +29,6 @@ const Calculadora = () => {
   const Calcular = () => {
     setResultado(adultos * 600);
     setResultado2(kids * 100);
-    
   };
 
   // CORTES
@@ -288,9 +290,21 @@ const Calculadora = () => {
           </SafeAreaView>
 
           <SafeAreaView>
-            <Text>{resultado}</Text>
-            <Text>{resultado2}</Text>
+            <TouchableOpacity style={styles.botao} onPress={() => Limpar()}>
+              <Text style={styles.titleBotao}>LIMPAR</Text>
+            </TouchableOpacity>
           </SafeAreaView>
+
+          <SafeAreaView style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+            <Text style={{ color: "black", fontSize: 25, fontWeight: "bold" }}>
+              Resultado:{" "}
+            </Text>
+            <Text style={{ color: "crimson" }}>{resultado}</Text>
+            <Text style={{ color: "crimson" }}>{resultado2}</Text>
+          </SafeAreaView>
+
+          
+
         </SafeAreaView>
       </ScrollView>
     </>
