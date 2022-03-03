@@ -10,6 +10,7 @@ import Receitas from "./screens/Receitas";
 import Dicas from "./screens/Dicas";
 import DrawerItems from "./constants/DrawerItems";
 import { FontAwesome } from '@expo/vector-icons'; 
+import Creditos from './screens/Credits';
 import Footer from "./components/Footer";
 
 
@@ -56,13 +57,21 @@ export default function App() {
                     color={focused ? "#e91e63" : "black"}
                   />
                 )
-                : (
-                  <FontAwesome5
+                : drawer.iconType === "FontAwesome" ? (
+                  <FontAwesome
                     name={drawer.iconName}
                     size={24}
                     color={focused ? "#e91e63" : "black"}
                   />
                 )
+                : (
+                  <Ionicons
+                    name={drawer.iconName}
+                    size={24}
+                    color={focused ? "#e91e63" : "black"}
+                  />
+                )
+                
               
             }}
             component={
@@ -72,7 +81,9 @@ export default function App() {
                 ? Calculadora
                 : drawer.name === "Receitas"
                 ? Receitas
-                : Dicas
+                : drawer.name === "Dicas"
+                ? Dicas
+                : Creditos
             }
           />
         ))}

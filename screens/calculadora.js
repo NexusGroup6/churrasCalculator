@@ -303,8 +303,6 @@ const Calculadora = () => {
             <Text style={{ color: "crimson" }}>{resultado2}</Text>
           </SafeAreaView>
 
-          
-
         </SafeAreaView>
       </ScrollView>
     </>

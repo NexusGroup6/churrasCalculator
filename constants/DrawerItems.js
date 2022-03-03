@@ -18,5 +18,10 @@ export default [
         name:'Dicas',
         iconType:'FontAwesome',
         iconName:'lightbulb-o'
+    },
+    {
+        name:'Créditos',
+        iconType:'Ionicons',
+        iconName:'information-circle-outline'
     }
  ]
