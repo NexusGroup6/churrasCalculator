@@ -9,7 +9,7 @@ function Link2() {
   Linking.openURL("https://github.com/NexusGroup6/churrasCalculator");
 }
 
-const credits = () => {
+const Credits = () => {
   return (
     <>
       <View>
@@ -17,8 +17,8 @@ const credits = () => {
       </View>
       <View>
         <Text style={styles.subtitle}>Equipe Nexus Group</Text>
-        <Text style={styles.content}>Paulo Willyan - Full Stack</Text>
         <Text style={styles.content}>Paulo Rondon - Tech Lead</Text>
+        <Text style={styles.content}>Paulo Willyan - Full Stack</Text>
         <Text style={styles.content}>Vitor Benedito - Front End</Text>
         <Text style={styles.content}>Matheus Reis - Back End</Text>
         <Text style={styles.content}>Matheus Costa - Back End</Text>
@@ -44,7 +44,7 @@ const credits = () => {
   );
 };
 
-export default credits;
+export default Credits;
 
 const styles = StyleSheet.create({
   title: {
